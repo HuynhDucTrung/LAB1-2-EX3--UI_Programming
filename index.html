@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Web Bán Sản Phẩm</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <nav>
+          <ul class="menu">
+            <li><a href="#home">Trang Chủ</a></li>
+            <li><a href="#services">Dịch Vụ</a></li>
+            <li><a href="#about">Giới Thiệu</a></li>
+            <li><a href="#contact">Liên Hệ</a></li>
+          </ul>
+        </nav>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="product-content">
+        <div class="video-container">
+          <video width="100%" controls>
+            <source
+              src="video/Cách Buộc Dây Giày Đẹp Cho Nam Và Nữ Rất Ít Người Biết.mp4"
+              type=""
+            />
+            Trình duyệt của bạn không hỗ trợ video tag.
+          </video>
+        </div>
+        <div class="product-info">
+          <h3>Cách thắt dây giày</h3>
+          <p>
+            Hướng dẫn cách buộc dây giầy đẹp hình nơ, cách thắt dây giày đơn
+            giản nhưng rất ý người biết. Hôm nay, mình sẽ chia sẻ cách buộc dây
+            giầy đẹp có thể áp dụng cho cả nam và nữ. Cách buộc dây giày đẹp khó
+            bị tuột nhất khi chúng ta đi lại hoặc vận động, Thắt dây giày hình
+            nơ đẹo dễ rút.
+          </p>
+          <button>Tìm Hiểu Thêm</button>
+        </div>
+      </section>
+
+      <section class="product-list">
+        <article class="product-item">
+          <img src="img/giay-adidas.png" alt="" />
+          <h3>Giày Adidas</h3>
+          <p>Giá: 5,000,000 VND</p>
+          <button>Mua Ngay</button>
+        </article>
+        <article class="product-item">
+          <img src="img/giày nike.jpeg" alt="" />
+          <h3>Giày Nike</h3>
+          <p>Giá: 1,500,000 VND</p>
+          <button>Mua Ngay</button>
+        </article>
+        <article class="product-item">
+          <img src="img/giay-Jordan.jpeg" alt="" />
+          <h3>Giày Jordan</h3>
+          <p>Giá: 300,000 VND</p>
+          <button>Mua Ngay</button>
+        </article>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Thông Tin Bổ Sung</h2>
+      <p>
+        Đây là nơi chúng tôi cung cấp thêm thông tin hoặc các liên kết hữu ích
+        liên quan đến sản phẩm và dịch vụ của chúng tôi. Đừng bỏ lỡ!
+      </p>
+    </aside>
+
+    <footer>
+      <p>&copy; 2024 Trang Web Bán Sản Phẩm. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const menu = document.querySelector(".menu");
+
+      hamburger.addEventListener("click", () => {
+        menu.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>
